@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/mainstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8f58d13ed0.js" crossorigin="anonymous"></script>
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <section class="navigation">
+        <div class="navigation__container">
+            <div class="navigation__container__brand">
+                <a href="index.html">
+                    <h1>Re<span>fresh</span>.</h1>
+                </a>
+            </div>
+            <nav>
+                <div class="navigation__mobile">
+                    <a class="navigation__mobile--toggle" href="#!">
+                        <span></span>
+                    </a>
+                </div>
+                <ul class="navigation__list">
+                    <li class="navigation__list__item">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="navigation__list__item">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="navigation__list__item">
+                        <a href="products.html">Products</a>
+                    </li>
+                    <li class="navigation__list__item">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li class="navigation__list__item">
+                        <a href="cart.html" class="cart">
+                            <i class="fa" style="font-size:24px">&#xf07a;</i>
+                            <span class='badge badge-warning' id="numberOfProducts"> 0 </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <div class="about__hero contact__hero">
+        <div class="about__hero__text">
+            <h1>Contact Us</h1>
+            <h4>We are here for your questions</h4>
+        </div>
+    </div>
+    <div class="crave connect">
+        <h1 class="crave__title">Let's <span>Talk</span></h1>
+        <p class="crave__subtitle">
+            We want to hear more about your passion for smoothies or how much you liked one of our smoothies or why you didn't like it.
+        </p>
+    </div>
+    <div class="contact">
+        <div class="contact__images">
+            <img src="images/OAI2CJ0_burned.png">
+            <img src="images/melon.png">
+            <img src="images/OGQFCH0_burned.png">
+        </div>
+        <div class="contact__form">
+            <h1>Send a message</h1>
+            <form>
+                <div class="contact__form__item">
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Your first name here..">
+                  </div>
+                  <div class="contact__form__item">
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Your last name here..">
+                  </div>
+                <div class="contact__form__item">
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your email here..">
+                </div>
+                <div class="contact__form__item">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your message here.."></textarea>
+                </div>
+                <div class="contact__form__actions">
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+              </form>
+        </div>
+    </div>
+    <div class="subscribe">
+        <div class="subscribe__container">
+            <div class="subscribe__container__content">
+                <h1>Get Our <span>Recipes</span></h1>
+                <p>These smoothie recipes will get your day started off right by packing in nutrient-rich fruit and
+                    vegetables, plus protein-filled yogurt and milk for an energy boost that will keep you going until
+                    lunch. And unlike what you might get from store-bought options, they prioritize actual produce
+                    instead of the juices, sorbets, and sweeteners that can add tons of sugar to your cup.
+                </p>
+                <form class="subscribe__container__content__form">
+                    <input type="text" placeholder="Type your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="subscribe__container__image" style="display: flex;">
+                <img class="subscribe__container__image__item--pink"
+                    src="images/920-9201703_spinach-kiwi-smoothie-glass-bottle (1).png">
+                <img class="subscribe__container__image__item--purple"
+                    src="images/920-9201703_spinach-kiwi-smoothie-glass-bottle (1).png">
+                <img class="subscribe__container__image__item--green"
+                    src="images/920-9201703_spinach-kiwi-smoothie-glass-bottle (1).png">
+            </div>
+        </div>
+        <footer>
+            <h1>Refresh.</h1>
+            <p>Copyright © 2020 Refresh. <br> All rights reserved.</p>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="js/jquery-3.5.0.js"></script>
+    <script src="js/all.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1600,
+        })
+    </script>
+</body>
+
+</html>

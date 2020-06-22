@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/mainstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8f58d13ed0.js" crossorigin="anonymous"></script>
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <section class="navigation">
+        <div class="navigation__container">
+            <div class="navigation__container__brand">
+                <a href="index.html">
+                    <h1>Re<span>fresh</span>.</h1>
+                </a>
+            </div>
+            <nav>
+                <div class="navigation__mobile">
+                    <a class="navigation__mobile--toggle" href="#!">
+                        <span></span>
+                    </a>
+                </div>
+                <ul class="navigation__list">
+                    <li class="navigation__list__item">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="navigation__list__item">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="navigation__list__item">
+                        <a href="products.html">Products</a>
+                    </li>
+                    <li class="navigation__list__item">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li class="navigation__list__item">
+                        <a href="cart.html" class="cart">
+                            <i class="fa" style="font-size:24px">&#xf07a;</i>
+                            <span class='badge badge-warning' id="numberOfProducts"> 0 </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <div class="product">
+        <div class="product__box">
+            <div class="product__box__image">
+                <img src="images/920-9201703_spinach-kiwi-smoothie-glass-bottle (1).png">
+            </div>
+            <div class="product__box__text">
+                <div class="product__box__text--title">
+                    <h1 id="name">Nume produs</h1>
+                </div>
+                <div class="product__box__text__price">
+                    <span>€</span>
+                    <h4 id="price">14.00</h4>
+                </div>
+                <p id="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et dignissimos ratione,
+                    est libero praesentium sapiente nesciunt deleniti numquam fugiat cumque!</p>
+                <h5>Category: <span id="category">Smoothie</span></h5>
+                <h5>Tag: <span id="tag">Tag Product</span></h5>
+                <div class="ingredients__header">
+                    <h2>Main Ingredients</h2>
+                    <button id="openToViewRemainingIngredientsButton">+</button>
+                </div>
+                <div class="ingredients" id="ingredients">
+                </div>
+                <div class="quantity__product">
+                    <div class="quantity__product__modify">
+                        <h4>Quantity</h4>
+                        <button id="decrease-quantity">-</button>
+                        <input type="number" min="1" value="1" id="quantity">
+                        <button id="increase-quantity">+</button>
+                    </div>
+                    <a class="link" href="#!" id="add-to-cart-button">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modals">
+        <div class="modal" id="error-delete-ingredient">
+            <div class="modal-header">
+                <div class="title">Error</div>
+                <button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                The product must contain at least 2 ingredients
+            </div>
+        </div>
+        <div class="overlay" id="overlay"></div>
+        <div class="modal" id="add-ingredient-modal">
+            <div class="modal-header">
+                <div class="title">Add Ingredient</div>
+                <button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <select>
+                </select>
+                <button id="add">Add Ingredient</button>
+            </div>
+        </div>
+        <div class="overlay" id="overlay"></div>
+    </div>
+    </div>
+    <div class="subscribe">
+        <div class="subscribe__container">
+            <div class="subscribe__container__content">
+                <h1>Get Our <span>Recipes</span></h1>
+                <p>These smoothie recipes will get your day started off right by packing in nutrient-rich fruit and
+                    vegetables, plus protein-filled yogurt and milk for an energy boost that will keep you going until
+                    lunch. And unlike what you might get from store-bought options, they prioritize actual produce
+                    instead of the juices, sorbets, and sweeteners that can add tons of sugar to your cup.
+                </p>
+                <form class="subscribe__container__content__form">
+                    <input type="text" placeholder="Type your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="subscribe__container__image" style="display: flex;">
+                <img class="subscribe__container__image__item--pink"
+                    src="images/920-9201703_spinach-kiwi-smoothie-glass-bottle (1).png">
+                <img class="subscribe__container__image__item--purple"
+                    src="images/920-9201703_spinach-kiwi-smoothie-glass-bottle (1).png">
+                <img class="subscribe__container__image__item--green"
+                    src="images/920-9201703_spinach-kiwi-smoothie-glass-bottle (1).png">
+            </div>
+        </div>
+        <footer>
+            <h1>Refresh.</h1>
+            <p>Copyright © 2020 Refresh. <br> All rights reserved.</p>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.5.0.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/selected-product.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1600,
+        })
+    </script>
+</body>
+
+</html>
