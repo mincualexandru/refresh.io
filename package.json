@@ -9,7 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https://mincualexandru.github.io/refresh"
+  "homepage": "https://mincualexandru.github.io/refresh",
   "dependencies": {
     "gh-pages": "^3.1.0"
   }

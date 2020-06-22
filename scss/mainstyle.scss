@@ -94,7 +94,7 @@
     pointer-events: all;
   }
 
-  button {
+  .return {
     font-size: 1.7rem;
     padding: 10px 15px;
   }
@@ -104,14 +104,4 @@ button[disabled]{
   border: 1px solid #999999;
   background-color: #cccccc;
   color: #666666;
-}
-
-.success {
-  background-color: #FF4136;
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }

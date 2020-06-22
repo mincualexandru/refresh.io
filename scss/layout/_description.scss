@@ -1,6 +1,6 @@
 .description {
   background-image: linear-gradient(rgba($main-color, 0.2), rgba($main-color, 0.2)),
-    url("/dist/images/rsz_711.jpg");
+    url("../images/rsz_711.jpg");
   min-height: 700px;
   background-attachment: fixed;
   background-position: center;
@@ -15,7 +15,7 @@
 
   @include customizedMediaQueryWithMaxWidth(1000px) {
     background-image: linear-gradient(rgba($main-color, 0.7), rgba($main-color, 0.7)),
-    url("/dist/images/rsz_711.jpg");
+    url("../images/rsz_711.jpg");
   }
 
   &__title {
