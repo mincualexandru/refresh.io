@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/mainstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8f58d13ed0.js" crossorigin="anonymous"></script>
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <section class="navigation">
+        <div class="navigation__container">
+            <div class="navigation__container__brand">
+                <a href="index.html">
+                    <h1>Re<span>fresh</span>.</h1>
+                </a>
+            </div>
+            <nav>
+                <div class="navigation__mobile">
+                    <a class="navigation__mobile--toggle" href="#!">
+                        <span></span>
+                    </a>
+                </div>
+                <ul class="navigation__list">
+                    <li class="navigation__list__item">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="navigation__list__item">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="navigation__list__item">
+                        <a href="products.html">Products</a>
+                    </li>
+                    <li class="navigation__list__item">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li class="navigation__list__item">
+                        <a href="cart.html" class="cart">
+                            <i class="fa" style="font-size:24px">&#xf07a;</i>
+                            <span class='badge badge-warning' id="numberOfProducts"> 0 </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <div class="hero">
+        <div class="hero__container"><div data-aos="zoom-in-down">
+                <h1 class="hero__container__title">Re<span>fresh</span>. <br> Maximum <span>fresh</span>ness <br> in
+                    every drop.</h1>
+                <a class="link" href="#!">View more</a>
+            </div>
+        </div>
+    </div>
+    <div class="crave">
+        <h1 class="crave__title">Smoothie <span>craving</span></h1>
+        <p class="crave__subtitle">Every Refresh smoothie is crafted using only high quality fruits and veggies and plenty of vitamins and nutrients to nourish you.</p>
+    </div>
+    <div class="samples" data-bg-text="Re &#xa; fresh &#xa; ers.">
+        <div class="samples__presentation">
+            <div class="samples__presentation__container">
+                <div class="samples__presentation__container--normal">
+                        <img  class="samples__presentation__container__image" src="images/juice-bottle-z0A5RBF-600-removebg-preview.png">
+                    <div class="samples__presentation__container__description">
+                        <h1>Sunshine Smoothies</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dui ante, consectetur non scelerisque.</p>
+                        <a class="link" href="#!">View more</a>
+                    </div>
+                </div>
+                <div class="samples__presentation__container--inverse">
+                        <img class="samples__presentation__container__image" style="filter: hue-rotate(-271deg);" src="images/juice-bottle-z0A5RBF-600-removebg-preview.png">
+                    <div class="samples__presentation__container__description">
+                        <h1>Smoothie Fairytale</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dui ante, consectetur non scelerisque.</p>
+                        <a class="link" href="#!">View more</a>
+                    </div>
+                </div>
+            </div>
+            <img class="image--left" src="images/berries.png">
+            <img class="image--right" src="images/blackberries.png">
+        </div>
+        <div class="samples__background">
+            Refresh <br> for everyobdy.
+        </div>
+    </div>
+    <div class="description">
+        <div class="box">
+            <h1 class="description__title">About Our <span>Smoothie</span> Vision</h1>
+            <div class="description__container description__container--up">
+                <div class="description__container__item">
+                    <h4>Delicious Fruits</h4>
+                    <p>You can be 100% sure each smoothie is providing you delicious fruits and veggies without artificial flavors or added sugars—just how Mother Nature intended.</p>
+                </div>
+                <div class="description__container__item">
+                    <h4>Ingredient Sourcing</h4>
+                    <p>We bring the Goodness Outside through our ingredient sourcing and community support. We believe in bringing goodness inside our products and goodness outside to the world.</p>
+                </div>
+            </div>
+            <div class="description__container">
+                <div class="description__container__item">
+                    <h4>Cold Press</h4>
+                    <p>Many juices on the market have been thermally pasteurized, which can affect the natural flavors of the ingredients. This is why we cold press our juice using high pressure processing.</p>
+                </div>
+                <div class="description__container__item">
+                    <h4>Vitamins > Disease</h4>
+                    <p>Fruits such as mangos, bananas and pineapples are a great source for vitamin C, potassium, folate and manganese which helps keep your bones, blood sugar, and thyroid gland.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="crave">
+        <h1 class="crave__title">Customers <span>opinions</span></h1>
+    </div>
+    <div class="testimonial__section">
+        <div class="testimonial__container">
+            <div class="testimonial__section__contents">
+                <div class="testimonial__section__contents--item active" id="test-1">
+                    <p>Ensure you still get your daily dose of veggies, without having to worry about prepping and chopping, thanks to this veggie smoothie from Refresh. It contains organic vegetables, along with a great balance of carbs, fats and proteins.</p>
+                    <span>Mary / Smothie Lover</span>
+                </div>
+                <div class="testimonial__section__contents--item" id="test-2">
+                    <p>These Drinks from Medlie come full of all the nutrients of a fresh-pressed juice or smoothie but with 90 percent less sugar. These drinks are also loaded with fiber from 4+ servings of vegetables per glass.</p>
+                    <span>Alex / Smothie Lover</span>
+                </div>
+                <div class="testimonial__section__contents--item" id="test-3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora accusantium repellat doloribus impedit autem culpa laudantium odit nemo, ad cumque temporibus nesciunt ipsam molestias, deserunt reprehenderit, quam corporis neque ut?</p>
+                    <span>Andrew / Smothie Lover</span>
+                </div>
+                <div class="testimonial__section__contents--item" id="test-4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus corporis itaque dolorum at quasi doloremque quam, explicabo ex libero alias distinctio non nemo. Tempore qui, quibusdam incidunt expedita suscipit fuga!</p>
+                    <span>Emy / Smothie Lover</span>
+                </div>
+                <div class="testimonial__section__contents--item" id="test-5">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus corporis itaque dolorum at quasi doloremque quam, explicabo ex libero alias distinctio non nemo. Tempore qui, quibusdam incidunt expedita suscipit fuga!</p>
+                    <span>Emy / Smothie Lover</span>
+                </div>
+                <div class="testimonial__section__contents--item" id="test-6">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus corporis itaque dolorum at quasi doloremque quam, explicabo ex libero alias distinctio non nemo. Tempore qui, quibusdam incidunt expedita suscipit fuga!</p>
+                    <span>Emy / Smothie Lover</span>
+                </div>
+            </div>
+            <div class="testimonial__container__pics">
+                <img src="/dist/images/melon.png" alt="test-1" class="active">
+                <img src="/dist/images/orange.png" alt="test-2">
+                <img src="/dist/images/lemon.png" alt="test-3">
+                <img src="/dist/images/lime3.png" alt="test-4">
+                <img src="/dist/images/apple_PNG12503.png" alt="test-5">
+                <img src="/dist/images/banana_PNG842.png" alt="test-6">
+            </div>
+        </div>
+    </div>
+    <div class="subscribe">
+        <div class="subscribe__container">
+            <div class="subscribe__container__content">
+                <h1>Get Our <span>Recipes</span></h1>
+                <p>These smoothie recipes will get your day started off right by packing in nutrient-rich fruit and vegetables, plus protein-filled yogurt and milk for an energy boost that will keep you going until lunch. And unlike what you might get from store-bought options, they prioritize actual produce instead of the juices, sorbets, and sweeteners that can add tons of sugar to your cup.
+                </p>
+                <form class="subscribe__container__content__form">
+                    <input type="text" placeholder="Type your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="subscribe__container__image" style="display: flex;">
+                <img class="subscribe__container__image__item--pink" src="/dist/images/920-9201703_spinach-kiwi-smoothie-glass-bottle (1).png">
+                <img class="subscribe__container__image__item--purple" src="/dist/images/920-9201703_spinach-kiwi-smoothie-glass-bottle (1).png">
+                <img class="subscribe__container__image__item--green" src="/dist/images/920-9201703_spinach-kiwi-smoothie-glass-bottle (1).png">
+            </div>
+        </div>
+        <footer>
+            <h1>Refresh.</h1>
+            <p>Copyright © 2020 Refresh. <br> All rights reserved.</p>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="js/jquery-3.5.0.js"></script>
+    <script src="js/all.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1600,
+        })
+    </script>
+</body>
+
+</html>

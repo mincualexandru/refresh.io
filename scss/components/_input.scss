@@ -1,0 +1,24 @@
+input {
+    @extend %input;
+}
+
+textarea {
+  @extend %input;
+}
+
+%input {
+  padding: 14px 18px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  background-color: #74578e;
+  border:transparent;
+  color: #fcf7ff;
+  border-radius: 5px;
+  outline: none;
+  @include largePhone() {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+}

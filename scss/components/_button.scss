@@ -1,0 +1,23 @@
+button {
+    padding: 14px 18px;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    background-color: #74578e;
+    color: #fcf7ff;
+    border:transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.5s ease-in-out;
+    @include largePhone() {
+      font-size: 12px;
+      padding: 10px 15px;
+    }
+
+    &:hover {
+      background-color: #B6A4C7;
+      color: #fcf7ff;
+    }
+}

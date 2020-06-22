@@ -1,0 +1,71 @@
+.hero {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url("../../dist/images/bg2.png") center no-repeat;
+  background-size: cover;
+  @include flexContentWithJustifyCustomized(space-evenly);
+  text-align: center;
+  width: $container-width;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 15px;
+  margin-top: 70px;
+
+  @include customizedMediaQueryWithMaxWidth(1200px) {
+    width: 90vw;
+  }
+
+  @include smallPhone {
+    margin-top: 40px;
+  }
+
+  &__container {
+    @include flexContentWithJustifyCustomized(space-around);
+    width: 93vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    @include customizedMediaQueryWithMaxWidth(1400px) {
+      width: 95vw;
+    }
+
+    @include tablet() {
+      width: 60vw;
+    }
+
+    &__title {
+      font-size: 10rem;
+      line-height: 13rem;
+      font-weight: 900;
+      color: $lighten-secondary-color;
+      text-shadow: $text-shadow;
+      font-family: $hero-title-font;
+      margin: 0px 10px;
+      @include customizedMediaQueryWithMaxWidth(1400px) {
+        font-size: 9rem;
+        line-height: 10rem;
+      }
+      @include customizedMediaQueryWithMaxWidth(975px) {
+        font-size: 7rem;
+        line-height: 8.1rem;
+      }
+      @include mixBetweenMinWitdhAndMaxWidth(414px, 975px) {
+        font-size: 6rem;
+        line-height: 7.1rem;
+      }
+      @include largePhone() {
+        font-size: 5rem;
+        line-height: 6.1rem;
+      }
+      @include customizedMediaQueryWithMaxWidth(360px) {
+        font-size: 4rem;
+        line-height: 5rem;
+      }
+      span {
+        color: $secondary-color;
+      }
+    }
+  }
+}

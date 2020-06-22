@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 16px;
+    font-family: $font-family;
+    overflow-x: hidden;
+    position: relative;
+}
+
+span {
+    color: #74578e;
+}
+
+a {
+    text-decoration: none;
+}
+
+::placeholder {
+    color: #fcf7ff;;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fcf7ff;;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #fcf7ff;;
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

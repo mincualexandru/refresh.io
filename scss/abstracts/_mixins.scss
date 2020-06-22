@@ -1,0 +1,121 @@
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+@mixin positionTop($howMuch) {
+    top: $howMuch;
+}
+
+@mixin mixBetweenMinWitdhAndMaxWidth($minWidth, $maxWidth) {
+    
+    @media (min-width: $minWidth) and (max-width: $maxWidth) {
+
+        @content;
+
+    }
+}
+
+@mixin desktop {
+    
+    @media (max-width: 1024px) {
+
+        @content;
+
+    }
+}
+
+@mixin tablet {
+    
+    @media (max-width: 768px) {
+
+        @content;
+
+    }
+}
+
+@mixin largePhone {
+    
+    @media (max-width: 414px) {
+
+        @content;
+
+    }
+}
+
+@mixin smallPhone {
+    
+    @media (max-width: 320px) {
+
+        @content;
+
+    }
+}
+
+@mixin customizedMediaQueryWithMaxWidth($size) {
+
+    @media (max-width: $size) {
+        
+        @content;
+
+    }
+
+}
+
+@mixin customizedMediaQueryWithMinWidth($size) {
+
+    @media (min-width: $size) {
+        
+        @content;
+
+    }
+
+}
+
+@function randomNum() {
+    $rand: random(350) + deg;
+    @return $rand;
+  }
+
+@mixin randomHueRotate() {
+    filter: hue-rotate(randomNum());
+}
+
+$classes: 6;
+
+%applyRandomHueRotate {
+    max-height: 220px;
+    margin: 20px;
+    @include customizedMediaQueryWithMaxWidth(880px) {
+        max-height: 180px;
+    margin: 10px;
+    }
+}
+
+@mixin generateClassesForHueRotate {
+  @for $i from 1 through $classes {
+      .product__types__item--#{$i} { @extend %applyRandomHueRotate; }
+  }
+}
+
+@mixin flexCenterContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexContentWithJustifyCustomized($justify) {
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+}
+
+$types-of-images: ("pink": 280, "purple": 180, "green": 90);
+
+@each $key, $value in $types-of-images {
+    .subscribe__container__image__item--#{$key} {
+        @extend %imageSubscribe;
+        filter: hue-rotate(#{$value}deg);
+    }
+}

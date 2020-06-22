@@ -1,0 +1,48 @@
+.crave {
+  max-width: 900px;
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  text-align: center;
+  line-height: 10rem;
+
+  @include customizedMediaQueryWithMaxWidth(500px) {
+    margin-bottom: 0px;
+    line-height: 6rem;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 7.5rem;
+    font-weight: 900;
+    color: $secondary-color;
+    
+    @include customizedMediaQueryWithMaxWidth(500px) {
+      font-size: 4.5rem;
+    }
+
+    span {
+      color: $main-color;
+      font-family: $title-font;
+      font-size: 12rem;
+
+      @include customizedMediaQueryWithMaxWidth(500px) {
+        font-size: 6rem;
+      }
+
+    }
+  }
+
+  &__subtitle {
+    color: rgba(164, 164, 164, 0.7);
+    margin: 0px 30px;
+    font-size: 2.5rem;
+    line-height: 4rem;
+
+    @include customizedMediaQueryWithMaxWidth(500px) {
+        font-size: 1.8rem;
+        line-height: 3rem;
+    }
+
+  }
+}

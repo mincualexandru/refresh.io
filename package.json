@@ -1,0 +1,16 @@
+{
+  "name": "the-refresher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://mincualexandru.github.io/refresh"
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}

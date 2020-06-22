@@ -1,0 +1,90 @@
+.contact__hero {
+  background: linear-gradient(rgba(116, 87, 142, 0.5), rgba(116, 87, 142, 0.5)),
+    url("/dist/images/rsz_21468.jpg") center no-repeat;
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.connect {
+  max-width: 850px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 60vw;
+  margin: 0 auto;
+
+  @include mixBetweenMinWitdhAndMaxWidth(600px, 1400px) {
+      width: 90vw;
+  }
+  
+  @include customizedMediaQueryWithMaxWidth(600px) {
+      flex-direction: column;
+      padding: 0px 0px 50px;
+  }
+
+  padding: 100px 0px 150px;
+
+  &__images {
+      display: flex;
+      flex-direction: column;
+      @include mixBetweenMinWitdhAndMaxWidth(600px, 1400px) {
+        margin-right: 20px;
+    }
+      @include customizedMediaQueryWithMaxWidth(600px) {
+        flex-direction: row;
+    padding: 50px 0px;
+    }
+    img {
+      width: 200px;
+      height: 200px;
+      @include customizedMediaQueryWithMaxWidth(600px) {
+        width: 100px;
+        height: 100px;
+    }
+    }
+  }
+
+  &__form {
+      width: 500px;
+      @include customizedMediaQueryWithMaxWidth(600px) {
+        width: 300px;
+    }
+      h1 {
+          text-align: center;
+        font-family: 'Fugaz One', cursive;
+        margin-bottom: 10px;
+        color: #74578e;
+        letter-spacing: 0.2px;
+        font-size: 5rem;
+        @include customizedMediaQueryWithMaxWidth(600px) {
+            font-size: 3.4rem;
+        }
+      }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1em;
+      @include customizedMediaQueryWithMinWidth(480px) {
+        flex-direction: row;
+    }
+      input {
+        background-color: #cdc0d8;
+        width: 100%;
+      }
+      textarea {
+        background-color: #cdc0d8;
+      }
+    }
+    &__item > * {
+      flex: 1;
+    }
+    &__actions {
+        display: flex;
+        justify-content: flex-end;
+    }
+  }
+}

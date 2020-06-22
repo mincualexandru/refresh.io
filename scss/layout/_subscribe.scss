@@ -1,0 +1,94 @@
+.subscribe {
+  margin: 0px auto;
+  background-color: hsl(276, 100%, 98%);
+  
+  .subscribe__container {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    padding-bottom: 70px;
+
+    @include customizedMediaQueryWithMaxWidth(1100px) {
+      flex-direction: column;
+      padding-top: 40px;
+    }
+
+    img {
+      margin: 5px;
+
+      @include customizedMediaQueryWithMaxWidth(1100px) {
+        max-height: 300px;
+      }
+    
+      @include customizedMediaQueryWithMinWidth(1100px) {
+        position: relative;
+        top: 35px;
+      }
+    
+      @include largePhone() {
+        max-height: 200px;
+      }
+
+    }
+
+    &__content {
+      flex: 0 0 60%;
+      color: #74578e;
+
+      @include customizedMediaQueryWithMaxWidth(1100px) {
+        text-align: center;
+        margin: 25px;
+      }
+
+      @include customizedMediaQueryWithMinWidth(1100px) {
+        position: relative;
+        top: -20px;
+      }
+
+      h1 {
+        font-size: 5rem;
+        margin-bottom: 20px;
+        line-height: 4rem;
+        font-family: $title-font;
+
+        @include customizedMediaQueryWithMaxWidth(660px) {
+          font-size: 4rem;
+        }
+
+      }
+
+      p {
+        @include customizedMediaQueryWithMinWidth(1100px) {
+          max-width: 550px;
+        }
+
+        @include mixBetweenMinWitdhAndMaxWidth(768px, 1100px) {
+          max-width: 60vw;
+          margin: auto;
+        }
+
+        @include customizedMediaQueryWithMaxWidth(768px) {
+          max-width: 75vw;
+          margin: auto;
+        }
+      }
+      &__form {
+        @include flexContentWithJustifyCustomized(start);
+        margin-top: 25px;
+
+        @include customizedMediaQueryWithMaxWidth(1100px) {
+          justify-content: center;
+        }
+
+        input {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+%imageSubscribe {
+  max-height: 400px;
+}

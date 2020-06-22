@@ -1,0 +1,28 @@
+.link {
+    text-transform: uppercase;
+    margin-top: 30px;
+    display: inline-block;
+    background: #74578e;
+    color: white;
+    padding: 14px 30px;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+
+    @include customizedMediaQueryWithMaxWidth(1400px) {
+        padding: 14px 20px;
+    }
+
+    @include customizedMediaQueryWithMaxWidth(975px) {
+        margin-top: 20px;
+        font-size: 12px;
+        padding: 14px 15px;
+    }
+
+    &:hover {
+        background: #B6A4C7;
+        color: white;
+    }
+}

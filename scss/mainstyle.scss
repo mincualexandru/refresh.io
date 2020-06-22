@@ -1,0 +1,117 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/global';
+
+@import 'components/link';
+@import 'components/input';
+@import 'components/button';
+
+@import 'layout/navigation';
+@import 'layout/hero';
+@import 'layout/crave';
+@import 'layout/products';
+@import 'layout/description';
+@import 'layout/testimonials';
+@import 'layout/subscribe';
+@import 'layout/footer';
+@import 'layout/about/about';
+@import 'layout/contact/contact';
+@import 'layout/products/gallery-products';
+@import 'layout/product/product';
+@import 'layout/cart';
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+  }
+  
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+  
+  .modal-header .title {
+    font-size: 2.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 3.25rem;
+    font-weight: bold;
+    color: #74578e;
+    padding: 0px;
+  }
+  
+  .modal-body {
+    padding: 45px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  select {
+    padding: 10px 0px;
+    margin-bottom: 30px;
+    font-size: 1.9rem;
+  }
+  
+  .overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  .overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  button {
+    font-size: 1.7rem;
+    padding: 10px 15px;
+  }
+
+  button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.success {
+  background-color: #FF4136;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
